@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.user-icon{
+    width: 40px;
+}
+
+.table{
+    width: 100vw;
+    padding: 100px;
+}
+
+.table-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    border-radius: 16px;
+}
+
+.table-item input{
+    padding: 4px 12px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.obs-container{
+    max-width: 350px;
+    overflow: hidden;
+}
