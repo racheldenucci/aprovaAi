@@ -115,6 +115,7 @@ body{
         border: none;
         text-decoration: underline;
         color: gray;
+        background-color: transparent;
 }
 
 #cancel-btn:hover{
