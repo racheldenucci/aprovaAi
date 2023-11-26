@@ -26,15 +26,30 @@
                         <p class="obs">Observação</p>
                     </div>
                     
-
-                    <input type="button" value="aprovar" class="btn-accept">
-                    <input type="button" value="recusar" class="btn-refuse">
                     
                 </div>
             </div>
         </div>
+        <div class="new-req-btn-container">
+            <button id="new-req-btn">+ Nova requisição</button>
+        </div>
+
+        <div id="new-req-container">
+            <form action="POST">
+                <h1>Requisição #123</h1>
+                <input type="text" name="title" placeholder="Título requisição" class="form-input">
+                <input type="number" min="0.00" max="10000.00" step="0.01" name="price" placeholder="Valor" class="form-input">
+                <input type="text" name="obs" placeholder="Observação" class="form-input">
+
+                <input type="submit" value="Confirmar" id="submit-btn">
+                <button type="reset" id="cancel-btn">Cancelar</button>
+                
+            </form>
+        </div>
+        
     </div>
     
+    <script src="clinica-script.js"></script>
     
 </body>
 </html>

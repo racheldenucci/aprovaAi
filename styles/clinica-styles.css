@@ -7,6 +7,9 @@
     font-size: 16px;
     font-family: 'Inter', sans-serif;
 }
+h1{
+    font-size: 24px;
+}
 
 body{
     height: 100vh;
@@ -24,6 +27,7 @@ body{
 .user-icon{
     width: 40px;
 }
+
 
 .table{
     width: 100vw;
@@ -50,4 +54,85 @@ body{
 .obs-container{
     max-width: 350px;
     overflow: hidden;
+}
+
+.new-req-btn-container{
+    padding: 10px 80px;
+    text-align: right;
+}
+
+#new-req-btn{
+    padding: 10px 25px;
+    border-radius: 8px;
+    background-color: #4BD410;
+    color: white;
+    border: 1px solid #4BD410;
+    font-weight: bold;
+}
+
+#new-req-btn:hover{
+    background-color: white;
+    color: #4BD410;
+    border: 1px solid #4BD410;
+    transition: .2s;
+}
+
+#new-req-container {
+    visibility: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#new-req-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    border-radius: 16px;
+    padding: 100px;
+}
+
+.form-input{
+    padding: 10px 25px;
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    border-radius: 8px;
+}
+
+#cancel-btn{
+        border: none;
+        text-decoration: underline;
+        color: gray;
+}
+
+#cancel-btn:hover{
+    color: black;
+}
+
+#submit-btn{
+    padding: 10px 25px;
+    border-radius: 8px;
+    background-color: #4BD410;
+    color: white;
+    border: 1px solid #4BD410;
+    font-weight: bold;
+}
+
+#submit-btn:hover{
+    background-color: white;
+    color: #4BD410;
+    border: 1px solid #4BD410;
+    transition: .2s;
 }
